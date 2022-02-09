@@ -1,0 +1,149 @@
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 30px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+}
+
+.icon {
+  margin: 43px 43px 43px 0;
+}
+
+.col {
+  padding: 0 60px;
+  height: 520px;
+  width: 300px;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 40px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  background: hsl(0, 0%, 95%);
+  border: solid hsl(0, 0%, 95%) 2px;
+  text-decoration: none;
+  margin: 80px 50px 50px 0;
+}
+
+.sedan-button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv-button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-button {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+  text-decoration: none;
+  background: none;
+  color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 992px) {
+  .col {
+    padding: 40px;
+    max-width: 300px;
+    margin: auto;
+    height: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .icon {
+    margin: 0 0 20px 0;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 24px;
+    padding-right: 0;
+  }
+
+  .sedan {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .btn {
+    margin: 0;
+  }
+}
+
+.attribution {
+  text-align: center;
+}
+
+.att {
+  color: black;
+  text-decoration: underline;
+}
+
+.att:hover {
+  color: black;
+  text-decoration: none;
+}
